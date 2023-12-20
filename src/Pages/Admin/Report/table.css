@@ -1,0 +1,63 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+  scale: "1.01";
+}
+
+th {
+  background-color: #3455ac;
+  color: white;
+}
+
+/* Aturan CSS untuk membuat tabel responsif */
+@media only screen and (max-width: 768px) {
+  /* Hide the table headers and footers */
+  thead,
+  tfoot {
+    display: none;
+  }
+
+  /* Make each cell in the table display as a block element */
+  td {
+    display: block;
+    text-align: left;
+  }
+
+  .small-total {
+    text-align: right;
+  }
+
+  /* Add some padding to each cell */
+  td {
+    padding: 6px;
+  }
+
+  /* Add a border at the bottom of each cell */
+  td:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Add some margin to the table cells */
+  td:first-child {
+    margin-top: 12px;
+  }
+
+  td:last-child {
+    margin-bottom: 12px;
+  }
+}
